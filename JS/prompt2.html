@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ename =prompt("enter employee name ");
+        var eage =prompt("enter employee age");
+        var edpt =prompt("enter employee department");
+        var basicsalary =prompt("enter basicsalary");
+        basicsalary =parseInt(basicsalary);
+        var pf =(basicsalary*14)/100;
+        pf=parseInt(pf);
+        var hra =(basicsalary*25)/100;
+        hra=parseInt(hra);
+        var totalsalary = basicsalary+pf+hra;      
+        console.log("employee name :"+ename);
+        console.log("employee age :"+eage);
+        console.log("employee department :"+edpt);
+        console.log("employee basicsalary :"+basicsalary);
+        console.log("pf :"+pf);
+        console.log("hra :"+hra);
+        console.log("total salary :"+totalsalary);
+    </script>
+</body>
+</html>

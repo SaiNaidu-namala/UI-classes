@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sname =prompt("enter student name");
+        var sroll =prompt("enter student roll no");
+        var sage  =prompt("enter student age");
+        var sclass =prompt("enter student class");
+        var ssection =prompt("enter student section");
+        var tel = prompt("enter telugu marks");
+        tel =parseInt(tel);
+        var eng =prompt("enter english marks");
+        eng =parseInt(eng);
+        var mat =prompt("enter maths marks");
+        mat =parseInt(mat);
+        var sci =prompt("enter science marks");
+        sci =parseInt(sci);
+        var soc =prompt("enter social marks");
+        soc =parseInt(soc);
+        var total=tel+eng+mat+sci+soc;
+        var avg=total/5;
+        console.log(".......STUDENT MARK LIST.......");
+        console.log("student name :"+sname);
+        console.log("student roll no :"+sroll);
+        console.log("student age :"+sage);
+        console.log("student class :"+sclass);
+        console.log("student section :"+ssection);
+        console.log("total marks :"+total);
+        console.log("average :"+avg);
+        if(avg>=40){
+            console.log("student is passed");
+        }
+        if(avg<40){
+            console.log("student is fail");
+        }
+    </script>
+</body>
+</html>

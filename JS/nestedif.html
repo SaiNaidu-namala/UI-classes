@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empname =prompt("enter name :");
+        var age =prompt("enter age");
+        var gender =prompt("enter gender");
+        var dept =prompt("enter dept :");
+        var basicsalary =prompt("enter basic salary :");
+        basicsalary =parseInt(basicsalary);
+        var pf =(basicsalary*14)/100;
+        var hra =(basicsalary*15)/100;         
+        var totalsalary =basicsalary+pf+hra;
+        console.log("employee name :"+empname);
+        console.log("employee age :"+age);
+        console.log("gender :"+gender);
+        console.log("employee dept :"+dept);
+        console.log("enter basic salary :"+basicsalary);
+        console.log("pf :"+pf);
+        console.log("hra :"+hra);
+        console.log("total salary :"+totalsalary);
+        var totaltaxtobepaid,taxpercent=0;
+        
+        if(gender=='male'){
+            if(totalsalary>=1000000){
+                taxpercent=15;
+            }
+            else if(totalsalary>=500000){
+                taxpercent=10;
+            }
+            else if(totalsalary>=250000){
+                taxpercent=5;
+            }
+            else{
+                taxpercent=0;
+            }
+        }
+        else {female
+            if(totalsalary>=1000000){
+                taxpercent=15;
+            }
+            else if(totalsalary>=500000){
+                taxpercent=10;               
+            }
+            else if(totalsalary>=250000){
+                taxpercent=5;
+            }
+            else {
+                taxpercent=0;
+            }
+        }
+        totaltaxtobepaid=(totalsalary*taxpercent)/100;
+        console.log("total tax :"+totaltaxtobepaid);
+
+    </script>
+</body>
+</html>

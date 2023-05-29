@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("student details");
+        var name,age,gender,section,group,m1,m2,m3,m4,m5,m6,tot,avg;
+        function studentinfo(){
+         name=prompt("enter student name");
+         age=prompt("enter student age");
+         section=prompt("enter student section");
+         gender=prompt("enter student gender");
+         group=prompt("enter student group");
+          m1=prompt("enter m1 marks");
+          m1=parseInt(m1);
+          m2=prompt("enter m2 marks");
+            m2=parseInt(m2);
+          m3=prompt("enter m3 marks");
+            m3=parseInt(m3);
+          m4=prompt("enter m4 marks");
+            m4=parseInt(m4);
+           m5=prompt("enter m5 marks");
+            m5=parseInt(m5);
+          m6=prompt("enter m6 marks");
+            m6=parseInt(m6);
+        }
+        function totalandavg(){
+            total=m1+m2+m3+m4+m5+m6;
+            avg=total/6;
+        }
+        function displaydetails(){
+            console.log("student name :"+name);
+            console.log("student age :"+age);
+            console.log("student section :"+section);
+            console.log("student gender :"+gender);
+            console.log("student group"+group);
+            console.log("total marks :"+total);
+            console.log("average :"+avg);
+        }
+        function displaygrades(){
+            if(avg>=40){
+                console.log("pass");
+            }else if(avg>=60){
+                console.log("second class ");
+            }else if(avg>=70){
+                console.log("first class");
+            }else if(avg>=90){
+                console.log("distintion");
+            }else{
+                console.log("second class");
+            }         
+        }
+        studentinfo();
+        totalandavg();
+        displaydetails();
+        displaygrades();
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("emp details");
+        var ename,eage,egender,edept,basicsalary,pf,hra,totalsalary;
+        function empbasicdetails(){
+            ename=prompt("enter employee name");
+            eage=prompt("enter employee age");
+            egender=prompt("enter employee gender");
+            edept=prompt("enter employee department");
+            basicsalary=prompt("enter basic salary");
+            basicsalary=parseInt(basicsalary);            
+        }
+        function pfandhra(){
+            pf=(basicsalary*14)/100;
+            hra=(basicsalary*20)/100;
+            totalsalary=pf+hra+basicsalary;
+        }
+        function taxpercent(){
+            if(egender=='male'){
+                if(basicsalary>=1000000){
+                    taxpercent=10;
+                }else{
+                    taxpercent=5;
+                }            
+            }else {female 
+                if (basicsalary>=1000000){
+                    taxpercent=5;
+                }else {
+                    taxpercent=0;
+                }
+
+            }
+             totaltax=(totalsalary*taxpercent)/100;   
+            
+        }
+        function displayempdetails(){
+            console.log("employee name :"+ename);
+            console.log("employee age :"+eage);
+            console.log("employee gender :"+egender);
+            console.log("employee department :"+edept);
+            console.log("basic salary :"+basicsalary);
+            console.log("total pf :"+pf);
+            console.log("total hra :"+hra);
+            console.log("total tax :"+totaltax);
+            console.log("totalsalary :"+totalsalary);
+        }
+        empbasicdetails();
+        pfandhra();
+        taxpercent();
+        displayempdetails();       
+    </script>
+</body>
+</html>

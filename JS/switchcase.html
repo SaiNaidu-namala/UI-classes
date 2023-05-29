@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var p1=prompt("enter p1 value");
+        p1=parseInt(p1);
+        var p2=prompt("enter p2 value");
+        p2=parseInt(p2);
+        var userselection=prompt("enter user selection  add/sub/mul/div");
+        switch(userselection){
+            case 'add' :
+            var sum=p1+p2;
+            console.log("the sum value is :"+sum);
+            break;
+            case 'sub' :
+            var sub=p1-p2;
+            console.log("the sub value is :"+sub);
+            break;
+            case 'mul' :
+            var mul=p1*p2;
+            console.log("tha multiple value is :"+mul);
+            break;
+            case 'div' :
+            var div=p1/p2;
+            console.log("the division value is :"+div);
+            break;
+            default :
+            console.log("entered  wrong choice");
+
+            
+
+        }
+    </script>
+</body>
+</html>
