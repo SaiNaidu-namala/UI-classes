@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 2px solid blue;
+            width: 620px;
+            margin: 20px auto;                
+            padding: 20px;
+            background-color: beige;
+        }
+        h3{
+            text-align: center;
+            font-size: 20px;
+            color: rgb(184, 132, 132);
+            background-color: rgb(27, 46, 46);
+            border-radius: 10px;
+            padding: 5px;
+            
+        }
+        ul{
+            margin: 10px;
+            padding: 10px;
+
+        
+        }
+        li{
+            list-style: none;
+            margin: 5px;
+            padding: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .clr{
+            background-color: black;
+            color: azure;
+            font-style: italic;
+            font-weight: bold;
+            width: 100px;
+            height: 40px;
+            margin-left: 200px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 20PX;
+        }
+        .clr:hover{
+            color: darkgreen;
+            background-color: floralwhite;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3 >STUDENT REGISTRATION FORM</h3>
+        <form method="post" action="https://hddfK.com/senddata">
+        <ul>
+            <li>
+                <label for="">Enter user name : </label>
+                <input type="text" name="username" maxlength="20" placeholder="enter user name" required>
+            </li>
+
+            <li>
+                <label for="">Enter account number: </label>
+                <input type="text" name="accountnumber" maxlength="11" placeholder="enter account number">
+            </li>
+
+            <li>
+                <label for="">Enter password : </label>
+                <input type="password" name="password" maxlength="8" placeholder="enter password" required>
+            </li>
+            <li>
+                Enter Mail id : 
+                <input type="email">
+            </li>
+            
+            <li>
+                user gender : 
+                <input type="radio" name="gender" >male
+                <input type="radio" name="gender">female
+            </li>
+
+            <li>
+                languages : 
+                <input type="checkbox"> english
+                <input type="checkbox"> telugu
+                <input type="checkbox"> kannada
+            </li>
+
+            <li>
+                country name
+                <select>
+                    <option >India</option>
+                    <option >us</option>
+                    <option >uk</option>
+                    <option >japan</option>
+                    <option >russia</option>
+                </select>
+            </li>
+            <li>
+                select district
+                <select>
+                    <optgroup label="andhra pradesh">
+                        <option >guntur</option>
+                        <option >krishna</option>
+                        <option >prakasam</option>
+                        <option >kadapa</option>
+                    </optgroup>
+                    <optgroup label="telangana">
+                        <option >rangareddy</option>
+                        <option >warangal</option>
+                        <option >khammam</option>
+                        <option >nijamabad</option>
+                    </optgroup>
+                </select>
+            </li>
+            <li>
+                Select Favouriate color :
+                <input type="color">
+            </li>
+            <li>
+                tell about your self
+                <textarea name="" id="" cols="60" rows="10" maxlength="300"placeholder="max lenght 300 characters"></textarea>
+            </li>
+            <li>
+                file upload
+                <input type="file" accept=".pdf"> <input type="date">
+                <input type="time">
+            </li>
+            <li>
+                Upload Photo 
+                <input type="file" accept=".jpeg">
+            </li>
+            <li>
+                range 
+                <input type="range">
+            </li>
+            <li>
+                <input type="button" value="register" class="clr">
+            </li>
+            <li>
+                <input type="reset" value="reset" class="clr">
+            </li>
+
+            <li>
+                <input type="submit" value="submit" class="clr">
+            </li>
+        
+        </ul>
+    </form>
+    </div>
+</body>
+</html>
+
+<!-- input type = text / number / password / date / time / color / email / datetime / 
+               radio / checkbox / textarea / range / file / select / option / option group / 
+                button/ submit / reset  -->

@@ -1,0 +1,48 @@
+h3{
+    text-align: center;
+    color: maroon;
+    background-color: azure;
+    border: 1px solid;
+}
+ul{
+    border: 5ps solid #ccc;
+    margin: 10px auto;
+    width: 500px;
+    padding: 10px;
+}
+li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+}
+.markscontainer>input{
+    width: 60px;
+
+}
+.formcontainer>li{
+    border: 1px solid #918e8e;
+}
+.progresscardtitle{
+    text-align: center;
+    color: rgb(224, 192, 192);
+    font-weight: bold;
+    /* border: 20px solid black; */
+    font-size: 30px;
+}
+.progresscardblock{
+    /* display: none; */
+    border: 2px solid rgb(138, 133, 133);
+    background-color: rgb(51, 70, 63);
+    color: antiquewhite;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.progresscardblock>li{
+    border-bottom: 2px dotted maroon;
+    
+}
+.con{
+    text-align: center;
+    color: beige;
+    font-style: italic;
+}

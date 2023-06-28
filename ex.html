@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Demonstrating DHTML method</b>
+    <div id="container"></div>
+    <script>
+        var msg="hello every one how are you";
+        var spanElement=document.createElement("span");
+        spanElement.innerHTML=msg;
+        spanElement.setAttribute("id","test");
+        spanElement.setAttribute("class","sample");
+        spanElement.setAttribute("name","abc");
+        spanElement.style.color='blue';
+        spanElement.style.border='2px solid red';
+        spanElement.style.backgroundColor='yellow';
+        console.log(spanElement);
+        document.querySelector('#container').append(spanElement);
+    </script>
+</body>
+</html>

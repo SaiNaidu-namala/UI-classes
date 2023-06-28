@@ -1,0 +1,41 @@
+h1{
+    border: 2px solid darkred;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    background-color: black;
+    color: cornsilk;
+    border-radius: 10px;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    border: 2px solid #ccc;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: cadetblue;
+    color: rgb(247, 239, 239);
+}
+ul>li{
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 15px;
+}
+select{
+    width: 100px;
+}
+.btn{
+    background-color: brown;
+    width: 100px;
+    height: 30px;
+    color: cornsilk;
+    font-size: 15px;
+    border-radius: 50px;
+}

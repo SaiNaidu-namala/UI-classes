@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        var elementname=prompt("enter tag name ");
+        var msg=prompt("enter msg");
+        var Element=document.createElement(elementname);
+        Element.innerHTML='msg';
+        var whatid=prompt("enter id name");
+        Element.setAttribute("id","what id");
+        Element.style.color="red";
+        Element.style.border="2px dotted blue";
+        console.log(Element);
+        document.querySelector("#container").append(Element);
+    </script>
+</body>
+</html>

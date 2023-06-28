@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="procard.css">
+    <script src="procard.js"></script>
+</head>
+<body>
+    <h3>STUDENT DETAILS PROGRESS CARD</h3>
+    <ul class="formcontainer">
+        <li>
+            student name :
+            <input type="text" id="sname">
+        </li>
+        <li>
+            class :
+            <select  id="sclass">
+                <option>class x</option>
+                <option>class ix</option>
+                <option>class viii</option>
+                <option>class vii</option>
+            </select>
+        </li>
+        <li>
+            gender :
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+        </li>
+        <li class="markscontainer">marks :
+            <input type="text" id="m1">
+            <input type="text" id="m2">
+            <input type="text" id="m3">
+            <input type="text" id="m4">
+            <input type="text" id="m5">
+       </li>
+       <li>
+        <input type="button" value="generate progress card" onclick="readuserdata()">
+       </li>
+       </ul>
+<!-- ******* -->
+       <ul class="progresscardblock">
+        <li class="progresscardtitle">
+            student progress card
+        </li>
+        <li>
+            student name is : <span id="dsname"></span>
+        </li>
+        <li>
+            studentgender is : <span id="dsgender"></span>
+        </li>
+        <li>
+            student class is : <span id="dsclass"></span>
+        </li>
+        <li>
+            total marks is : <span id="dtotal"></span>
+        </li>
+        <li>
+            average marks : <span id="davg"></span>
+        </li>
+        <li>
+            student grade : <span id="dgrade"></span>
+        </li>
+        
+
+       </ul>
+    
+</body>
+</html>

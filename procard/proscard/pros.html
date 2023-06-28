@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pros.css">
+    <script src="pros.js"></script>
+</head>
+<body>
+    <h3>PROGRESS CARD</h3>
+    <ul class="formcontainer">
+        <li>
+            student name :
+            <input type="text" id="sname">
+        </li>
+        <li>
+            class
+            <select  id="sclass">
+                <option>class X</option>
+                <option>class IX</option>
+                <option>class VII</option>
+                <option>class VII</option>
+                <option>class VI</option>
+            </select>
+        </li>
+        <li>
+            gender :
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+        </li>
+        <li class="markscontainer">marks :
+            <input type="text" id="m1">
+            <input type="text" id="m2">
+            <input type="text" id="m3">
+            <input type="text" id="m4">
+            <input type="text" id="m5">
+        </li>
+        <li>
+            <input type="button" value="generate progress card" onclick="readuserdata()">
+        </li>
+
+    </ul>
+
+    <!-- *************************************** -->
+    <ul class="progresscardblock">
+        <li class="progresscardtitle">
+            student progress card :
+        </li>
+        <li>
+            student name : <span id="dsname"></span>
+        </li>
+        <li>
+            student class : <span id="dsclass"></span>
+        </li>
+        <li>
+            student gender : <span id="dsgender"></span>
+        </li>
+        <li>
+            total : <span id="dtotal"></span>
+        </li>
+        <li>
+            average : <span id="davg"></span>
+        </li>
+        <li>
+            grade : <span id="dgrade"></span>
+        </li>
+        <li class="con">
+           * * CONGRATULATIONS * *
+        </li>
+
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+li{
+    list-style-type: none;
+}
+img{
+    width:150px;
+    height:150px;
+}
+.container{
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    width: 250px;
+}
+.details>li{
+    border: 1px solid blue;
+    padding: 5px;
+    margin: 2px;
+
+}
+ul{
+    margin: 5px;
+    padding: 5px;
+    
+}
+

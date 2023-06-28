@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="evalfun.css">
+</head>
+<body>
+    <h1>EVALUATION OF A FUNCTION</h1>
+    <ul>
+        <li>
+            enter first value : 
+            <input type="text" id="fval">
+        </li>
+        <li>
+            enter second value :
+            <input type="text" id="sval">
+        </li>
+        <li>
+            select option
+            <select  id="abc">
+                <option>add</option>
+                <option>sub</option> 
+                <option>mul</option>
+                <option>div</option>
+            </select>
+        </li>
+        <li>
+            <input type="button" class="btn" value="evaluate" onclick="getvalue()"> 
+        </li>
+        <li>
+            the result is : 
+            <span id="res"></span>
+        </li>
+    </ul>
+    <script src="evalfun.js"></script>
+    
+</body>
+</html>
