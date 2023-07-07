@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class studentdata{
+            constructor(){
+                console.log("iam from constructor");
+            }
+            displaydetails(name,age,gender){
+                    this.name=name;
+                    this.age=age;
+                    this.gender=gender;
+                    console.log('iam from displayfunction')
+                }
+            }
+            var obj1=new studentdata();
+            console.log(obj1);
+            obj1.displaydetails('sai',24,'male');
+        
+    </script>
+</body>
+</html>

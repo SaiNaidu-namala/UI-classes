@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class bookdetails{
+            constructor(bdata){
+                this.bookname=bdata.bname;
+                this.bookprice=bdata.bprice;
+            }
+            displaydetails(){
+                console.log("book name : "+this.bookname);
+                console.log("book price :"+this.bookprice);
+            }
+        }
+        var b1=new bookdetails({bname:"my dreams",bprice:1999});
+        b1.displaydetails();
+        var b2=new bookdetails({bname :" my attitute",bprice:1499});
+        b2.displaydetails();
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class studentdata{
+            constructor(){
+                this.name ='sai';
+                this.age ='24';
+                this.gender='male';
+                console.log("iam from constructor");
+                console.log("student name :"+this.name);
+                console.log("age : "+this.age);
+                console.log("gender :"+this.gender);
+            }
+            displaydetails(){
+                console.log("im from displaydetails function");
+                console.log("student name :"+this.name);
+                console.log("age :"+this.age);
+                console.log("gender :"+this.gender);
+            }
+        }
+        var obj =new studentdata();
+        console.log(obj1);
+        obj1.displaydetails();
+
+    </script>
+</body>
+</html>

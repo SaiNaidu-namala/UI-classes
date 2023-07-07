@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class studentdata{
+            city='cumbum';
+            school='pace institute';
+            constructor(sdata){
+                this.name=sdata.name;
+                this.age=sdata.age;
+                this.gender=sdata.gedner;
+                console.log("iam from constructor");
+            }
+        }
+        var s1={
+            name:'sai',
+            age:24,
+            gender:'male',
+        }
+        var s2={
+            name:'honey',
+            age:24,
+            gender:'female',
+        }
+        var obj1=new studentdata(s1);
+        console.log(obj1);
+        var obj2=new studentdata(s2);
+        console.log(obj2);
+    </script>
+</body>
+</html>
