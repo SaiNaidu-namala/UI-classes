@@ -1,0 +1,34 @@
+<script>
+    class schooldata{
+        constructor(){
+            this.schoolname="pace institute";
+            this.location="cumbum";
+            this.rating=9/10;
+            this.faculty="kalyani"
+            this.subject="computer science"
+        }
+    }
+    class studentdata extends schooldata{
+        constructor(data){
+            super();
+            this.name=data.name;
+            this.age=data.age;
+            this.gender=data.gender;
+            this.course=data.course;
+        }
+        displaydetails(){
+            console.log("school name :"+this.schoolname);
+            console.log("location : "+this.location);
+            console.log("rating : "+this.rating);
+            console.log("faculty : "+this.faculty);
+            console.log("subject : "+this.subject);
+            console.log("name : "+this.name);
+            console.log("age : "+this.age);
+            console.log("gender : "+this.gender);
+            console.log("course : "+this.course);
+        }
+    }
+    var s1=new studentdata({name:'sai',age:'24',gender:'male',couse:'forntend'});
+    s1.displaydetails();
+
+</script>

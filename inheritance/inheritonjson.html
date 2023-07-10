@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sellerdetails={
+            sname:'pace electronics',
+            slocation:'cumbum',
+            srating:4,
+        }
+        var productdetails1={
+            name:'laptop',
+            price:49999,
+            manufacture:'hp',
+            warranty:'2yrs',
+
+            displaydetails(){
+                console.log("seller name : "+this.name);
+                console.log("location : "+this.slocation);
+                console.log("rating : "+this.srating);
+                console.log("productname : "+this.name);
+                console.log("price : "+this.price);
+                console.log("manufacture : "+this.manufacture);
+                console.log("warranty : "+this.warranty);
+            }
+        }
+        productdetails1. __proto__ =sellerdetails;
+        var productdetails2={
+            name:'mobile',
+            price:24999,
+            manufacture:'realme',
+            warranty:'1yr',
+
+            displaydetails(){
+                console.log("seller name : "+this.sname);
+                console.log("location : "+this.slocation);
+                console.log("rating : "+this.srating);
+                console.log("productname : "+this.name);
+                console.log("price : "+this.price);
+                console.log("manufacture : "+this.manufacture);
+                console.log("warranty : "+this.warranty);
+            }
+        }
+        productdetails2. __proto__ =sellerdetails;
+        productdetails1.displaydetails();
+        productdetails2.displaydetails();
+    </script>
+</body>
+</html>

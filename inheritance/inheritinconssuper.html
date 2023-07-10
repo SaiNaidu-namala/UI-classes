@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class schooldata{
+            constructor(data){
+                this.schoolname=data.schoolname;
+                this.location=data.location;
+                this.rating=data.rating;
+            }
+        }
+        class studentdata extends schooldata{
+            constructor(data){
+                super({schoolname:'pace institute',location:'cumbum',rating:'9'});
+                this.name=data.name;
+                this.age=data.age;
+                this.gender=data.gender;
+                this.course=data.course;
+            }
+            displaydetails(){
+                console.log("school name : "+this.schoolname);
+                console.log("location : "+this.location);
+                console.log("rating : "+this.rating);
+                console.log("student name : "+this.name);
+                console.log("age : "+this.age);
+                console.log("gender : "+this.gender);
+                console.log("course : "+this.course);
+            }
+        }
+        var s1=new studentdata({name:'sai',age:'24',gender:'male',course:'frontend'});
+        s1.displaydetails();
+    </script>
+</body>
+</html>

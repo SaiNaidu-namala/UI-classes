@@ -1,0 +1,31 @@
+<script>
+    class schooldata{
+        constructor(){
+            console.log("iam from constructor")
+            this.schoolname="pace institute";
+            this.location="cumbum";
+            this.rating=9/10;
+        }
+    }
+    class studentdata extends schooldata{
+        constructor(){
+            super();
+            console.log("from child class");
+            this.name="sai";
+            this.age=24;
+            this.gender="male";
+            this.class=10;
+        }
+        displaydata(){
+            console.log("school name : "+this.schoolname);
+            console.log("location : "+this.location);
+            console.log("rating : "+this.rating);
+            console.log("student name : "+this.name);
+            console.log("age : "+this.age);
+            console.log("gender : "+this.gender);
+            console.log("class : "+this.class);
+        }
+    }
+    var s1=new studentdata();
+    s1.displaydata();
+</script>
