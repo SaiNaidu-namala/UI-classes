@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data=[34,55,78,90,12,56];
+        var temporary=[];
+        for (var i=0;i<data.length;i++){
+            var result=data[i]*2;
+            temporary.push(result);
+        }
+        console.log(temporary);
+    </script>
+
+
+    <script>
+        var data=[20,50,63,45,89,85];
+        var simple=data.map((value)=>{
+            return (value*2);
+        })
+        console.log(simple);
+    </script>
+</body>
+</html>

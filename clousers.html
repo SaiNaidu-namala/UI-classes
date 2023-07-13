@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function values(){
+            console.log("this is from normal function");
+            console.log("***********")
+        }
+        values();
+    </script>
+
+    <script>
+        (function(){
+            console.log("this is from clousers function");
+            console.log("------------------");
+        })();
+    </script>
+
+    <script>
+        (()=>{
+            console.log("this is from clousers arrow fun");
+            console.log("--------------");
+        })();
+    </script>
+</body>
+</html>

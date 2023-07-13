@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=10;
+        // var b=25;re declare is possible
+        console.log("a value is : "+a);
+        var a=15;
+        a++;
+        console.log("a value is : "+a);
+
+        var a=100;
+        {
+            var a=200;
+        }
+        console.log("a value in block : "+a);
+
+        let x=11;
+        // let x=15; re declaration not possible
+
+        {
+            let x=50;
+            console.log("x value in block :"+x);
+        }
+        console.log("x value out side the block :"+x);
+    </script>
+</body>
+</html>
